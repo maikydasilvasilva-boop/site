@@ -1,0 +1,34 @@
+SITE DA CYBER SKY — COMO USAR
+
+1) TROCAR OS CONTATOS
+   Abra assets/site.js. No bloco CONTATO, logo no topo:
+     whatsapp          -> DDI + DDD + número, só dígitos
+     whatsappExibicao  -> como o número aparece na tela
+     email             -> está vazio ('') de propósito. Enquanto ficar vazio,
+                          o site não mostra e-mail. Quando contato@cyberskyanalytics.com
+                          existir, escreva entre as aspas e o canal de e-mail
+                          e o botão "Enviar por e-mail" aparecem sozinhos.
+     linkedin          -> endereço da página da empresa
+
+2) PUBLICAR NO GITHUB PAGES
+   Siga o passo a passo enviado na conversa. Resumo:
+   - Repositório público, com estes arquivos na raiz (não a pasta, o conteúdo dela).
+   - Settings > Pages > Source: Deploy from a branch, main, / (root).
+   - O arquivo CNAME já informa o domínio www.cyberskyanalytics.com.
+
+3) O QUE TEM NA PASTA
+   index.html           página do site (4 abas)
+   404.html             página de endereço não encontrado
+   CNAME                domínio do site (usado pelo GitHub Pages)
+   .nojekyll            avisa o GitHub para publicar os arquivos como estão
+   assets/site.css      visual
+   assets/site.js       abas, céu animado, carrossel e formulário
+   assets/logo.png      logotipo
+   assets/og.jpg        imagem que aparece ao compartilhar o link
+   assets/fonts/        fonte Montserrat (servida pelo próprio site)
+   robots.txt, sitemap.xml   para os buscadores
+
+4) PRIVACIDADE E SEGURANÇA
+   O site não usa cookies, não carrega nada de terceiros e não guarda dados do
+   formulário: ele só abre o WhatsApp do visitante. A política de segurança de
+   conteúdo (CSP) está dentro das próprias páginas.
